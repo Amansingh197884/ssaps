@@ -1,6 +1,9 @@
         :root {
-            --primary: #802030;
+            --primary: #0e5233;
             --accent: #ffc107;
+            --new:#0e5233;
+                        --primaryy: #a6c035;
+
         }
 
         body {
@@ -8,6 +11,25 @@
             margin: 0;
             background: #f8f9fa;
             overflow-x: hidden;
+        }
+
+        .navbar-toggler,
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .btn-close-custom:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .nav-link:focus {
+            outline: none !important;
+            box-shadow: none !important;
         }
 
         #headerWrapper {
@@ -164,3 +186,17 @@
             color: var(--primary) !important;
             font-size: 1.8rem;
         }
+        .top-item i{
+            color: var(--primaryy);
+        }
+        .navbar-brand img{
+    width: 130px;
+    height: auto;
+    padding: 5px;
+        }
+        @media (max-width: 767px) {
+    .navbar-brand img {
+        width: 60px;
+        padding: 0px !important;
+    }
+}
