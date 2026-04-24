@@ -1,0 +1,166 @@
+        :root {
+            --primary: #802030;
+            --accent: #ffc107;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        #headerWrapper {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1040;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .header-wrapper.scrolled {
+            transform: translateY(-41px);
+        }
+
+        .top-info-bar {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 0;
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .top-bar-content {
+                display: flex;
+                animation: marquee 10s linear infinite;
+                width: max-content;
+            }
+
+            .top-item {
+                padding-right: 50px;
+            }
+
+            .header-wrapper.scrolled {
+                transform: translateY(-37px);
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(10%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .main-nav {
+            background: transparent;
+            padding: 15px 0;
+            transition: all 0.4s ease;
+        }
+
+        .header-wrapper.scrolled .main-nav {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+            transition: 0.4s;
+        }
+
+        .header-wrapper.scrolled .navbar-brand img {
+            height: 45px;
+        }
+
+        .nav-link {
+            color: #222 !important;
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: var(--primary);
+            transition: 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--primary) !important;
+            transform: translateY(-2px);
+        }
+
+        .btn-contact {
+            background: var(--primary);
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            border: 2px solid var(--primary);
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-contact:hover {
+            background: transparent;
+            color: var(--primary) !important;
+        }
+
+        .offcanvas {
+            z-index: 2000 !important;
+            width: 70% !important;
+            border-left: none !important;
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .offcanvas-header {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .btn-close-custom {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .offcanvas .nav-link {
+            padding: 15px 25px !important;
+            border-bottom: 1px solid #f1f1f1;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .navbar-toggler {
+            border: none !important;
+            color: var(--primary) !important;
+            font-size: 1.8rem;
+        }
