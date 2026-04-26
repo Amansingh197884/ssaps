@@ -5,7 +5,7 @@
             --dark-base: #0f1012;
             --text-gray: #a0a0a0;
             --primaryy: #a6c035;
-            --maxwell-lime: #a3e635;
+            --maxwell-lime: rgb(163, 230, 53);
             --dark-text: #111827;
             --bg-light: #f9fafb;
               --primary: #6366f1;
@@ -774,3 +774,153 @@
             color: #000;
         }
 
+/* inside css start  */
+       
+
+       .Inside .section-header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+       .Inside .section-header h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            letter-spacing: -1px;
+            color: #0f172a;
+        }
+
+       .Inside .status-bar {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 25px 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+       .Inside .stat-box h2 {
+            color: var(--maxwell-lime);
+            font-weight: 800;
+            margin: 0;
+        }
+
+       .Inside .btn-apply-now {
+            background: var(--maxwell-lime);
+            color: rgb(0, 0, 0);
+            padding: 12px 28px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+      .Inside  .btn-apply-now:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            color: white;
+        }
+
+       .Inside .doc-link-pill {
+             background: #ffffff;
+            border-color: var(--maxwell-lime);
+            color: var(--maxwell-lime);
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
+            border: 1px solid ;
+
+        }
+
+       .Inside .doc-link-pill:hover {
+            background: var(--maxwell-lime);
+            border-color: var(--maxwell-lime);
+            color: #000;
+        }
+
+       
+
+       .Inside .nav-pills-custom .nav-linkk {
+            color: #000000;
+            font-weight: 700;
+            padding: 12px 30px;
+            border-radius: 14px;
+            margin-right: 20px;
+            border: none;
+            transition: 0.3s;
+            border-radius: 50px 5px;
+            margin-bottom: 20px;
+        }
+
+      .Inside  .nav-pills-custom .nav-linkk.active {
+            background: var(--maxwell-lime) !important;
+            color: #ffffff !important;
+        }
+
+       .Inside .card-wrapper {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            height: 320px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+       .Inside .card-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.2, 1, 0.22, 1);
+        }
+
+       .Inside .hover-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgb(163, 230, 53), transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+       .Inside .card-wrapper:hover img {
+            transform: scale(1.15);
+        }
+
+       .Inside .card-wrapper:hover .hover-overlay {
+            opacity: 1;
+        }
+
+       .Inside .overlay-text h4 {
+            color: #000000;
+            font-weight: 800;
+            margin-bottom: 5px;
+            transform: translateY(20px);
+            transition: transform 0.5s ease;
+        }
+
+       .Inside .overlay-text p {
+            color: #000000;
+            font-weight: 600;
+            margin: 0;
+            transform: translateY(20px);
+            transition: transform 0.5s ease 0.1s;
+        }
+
+      .Inside  .card-wrapper:hover .overlay-text h4,
+      .Inside  .card-wrapper:hover .overlay-text p {
+            transform: translateY(0);
+        }
+
+       .Inside .delay-1 { animation-delay: 0.1s; }
+       .Inside .delay-2 { animation-delay: 0.2s; }
+       .Inside .delay-3 { animation-delay: 0.3s; }
+       .Inside .delay-4 { animation-delay: 0.4s; }
+        
