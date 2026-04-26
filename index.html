@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siddharth Sansthan | Elite Design</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="shortcut icon" href="images/logo-1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="assets/style.css">
 
@@ -37,7 +42,7 @@
         <nav class="navbar navbar-expand-lg main-nav">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <!-- <img src="images/logo-1.png" alt="Logo"> -->
+                    <img src="images/logo-1.png" alt="Logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
@@ -82,32 +87,36 @@
         </div>
     </div>
 
-<!-- hero section  -->
-   <section class="hero-wrapper">
+    <!-- hero section  -->
+    <section class="hero-wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-xl-8">
-                    
+
                     <div class="animate__animated animate__fadeInLeft">
                         <span class="glass-tag mb-4">India's Top 50 B-School</span>
                     </div>
 
-                    <h1 class="main-heading animate__animated animate__fadeInLeft animate__delay-1s">
-                        Siddharth <br> Shikshan Sansthan
-                    </h1>
+                    <h2 class="main-heading animate__animated animate__fadeInLeft animate__delay-1s">
+                        Siddharth Shikshan
+                        <br>Avam Prashikshan Sansthan,
+                    </h2>
 
                     <div class="location-box animate__animated animate__fadeInLeft animate__delay-2s">
                         <h3 class="mb-1 text-white">Karaunda-Masina</h3>
-                        <p class="text-uppercase m-0 text-muted small" style="letter-spacing: 3px;">Siddharth Nagar, India</p>
+                        <p class="text-uppercase m-0 text-white small" style="letter-spacing: 3px;">Siddharth Nagar,
+                            India</p>
                     </div>
 
-                    <p class="lead mb-5 animate__animated animate__fadeIn animate__delay-3s" style="color: var(--text-gray); max-width: 600px;">
-                        Providing world-class professional training and education. Admission is now open for the <span class="text-white fw-bold">2026-27</span> session.
+                    <p class="lead mb-5 animate__animated animate__fadeIn animate__delay-3s"
+                        style="color: var(--text-gray); max-width: 600px;">
+                        Providing world-class professional training and education. Admission is now open for the <span
+                            class="text-white fw-bold">2026-27</span> session.
                     </p>
 
                     <div class="animate__animated animate__fadeInUp animate__delay-4s">
                         <a href="#" class="btn btn-elite">
-                            Start Journey 🎓
+                            Start Journey <img src="images/learning.png" alt="">
                         </a>
                     </div>
 
@@ -116,15 +125,260 @@
         </div>
 
         <div class="scroll-indicator d-none d-lg-block">
-            <small class="text-uppercase" style="letter-spacing: 2px; font-size: 0.6rem; color: var(--text-gray);">Explore</small>
+            <small class="text-uppercase"
+                style="letter-spacing: 2px; font-size: 0.6rem; color: var(--text-gray);">Explore</small>
             <div class="line mt-2"></div>
         </div>
     </section>
- <!-- hero section   -->
-<!-- footer  -->
-  <footer class="maxwell-footer">
+    <!-- hero section   -->
+    <section class="py-5 overflow-hidden about">
         <div class="container">
-            
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-7 section-header">
+                    <span class="badge mb-3">Programs & Study</span>
+                    <h2 class="display-4 fw-bold">Academics & Programs</h2>
+                </div>
+            </div>
+
+            <div class="row faculty-container g-4 align-items-center mb-5">
+                <div class="col-lg-4">
+                    <div class="custom-card card-arts">
+                        <div class="icon-box"><i class="fas fa-feather-pointed"></i></div>
+                        <h3 class="h4 fw-bold">Faculty of Arts</h3>
+                        <p class="text-muted mb-0">A foundation for creative thought and cultural excellence.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="custom-card card-science">
+                        <div class="icon-box" style="background: var(--secondary);"><i class="fas fa-atom"></i></div>
+                        <h3 class="h4 fw-bold">Faculty of Science</h3>
+                        <p class="text-muted mb-0">Advancing knowledge through scientific inquiry and innovation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="custom-card card-commerce">
+                        <div class="icon-box" style="background: #0ea5e9;"><i class="fas fa-coins"></i></div>
+                        <h3 class="h4 fw-bold">Faculty of Commerce</h3>
+                        <p class="text-muted mb-0">Understanding business, finance, and the world of commerce.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="pe-lg-5">
+                        <!-- <small class=" fw-bold">About Our SSAPS</small> -->
+                        <h2 class="display-5 fw-bold  mb-4">Empowering Students to Lead the Future</h2>
+                        <p class="text-muted mb-4">Siddharth Shikshan Avam Prashikshan Sansthan, located in
+                            Karaunda-Masina, Siddharth Nagar, continues to flourish as a prominent educational
+                            institution. This recognition is a testament to the school's unwavering commitment to
+                            excellence in management education.</p>
+
+                        <ul class="ps-0 mb-5">
+                            <li class="check-list-item"><i class="fas fa-check-double"></i> World-Class Education System
+                            </li>
+                            <li class="check-list-item"><i class="fas fa-check-double"></i> Wide range of courses for
+                                all fields</li>
+                            <li class="check-list-item"><i class="fas fa-check-double"></i> Industry-relevant curriculum
+                                from UG to PG</li>
+                        </ul>
+
+                        <div class="award-box">
+                            <i class="fas fa-trophy text-warning award-badge"></i>
+                            <div class="award-number">50+</div>
+                            <div>
+                                <h5 class="mb-0 fw-bold">Award Winning</h5>
+                                <small class="opacity-75">Achieved 50+ awards for excellence and innovation.</small>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <a href="#" class="about-btn">More About Us <i
+                                    class="fas fa-arrow-right-long ms-2 text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="img-mask">
+                        <img src="images/banner.jpeg" class="img-fluid" alt="Students">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- about  -->
+    <div class="container py-5 Programs">
+        <div class="filter-header">
+            <h3 class="fw-bold m-0">Our Programs</h3>
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="*">Show All</button>
+                <button class="filter-btn" data-filter=".science">Science</button>
+                <button class="filter-btn" data-filter=".arts">Arts</button>
+                <button class="filter-btn" data-filter=".commerce">Commerce</button>
+                <button class="filter-btn" data-filter=".education">Education</button>
+            </div>
+        </div>
+
+        <div class="swiper courseSwiper">
+            <div class="swiper-wrapper" id="swiper-container">
+
+                <div class="swiper-slide science">
+                    <div class="course-card">
+                        <div class="img-box">
+                            <img src="images/banner.jpeg" alt="">
+                            <div class="overlay-slide">
+                                <div class="overlay-content">
+                                    <p>Affilated with Siddarth University , Kapilvastu Siddharth Nagar</p>
+                                    <a href="#" class="enroll-btn-white">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="justify-content-between d-flex">
+                                <span class="cat-tag">BA</span>
+                                <span class="cat-tag">2 Years</span>
+
+                            </div>
+                            <h5 class="course-title">BA (Bachelor of Arts)...</h5>
+                            <!-- <p class="text-muted small">Siddarth University, Kapilvastu</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide science">
+                    <div class="course-card">
+                        <div class="img-box">
+                            <img src="images/conference.jpeg" alt="">
+                            <div class="overlay-slide">
+                                <div class="overlay-content">
+                                    <p>Affilated with Siddarth University , Kapilvastu Siddharth Nagar</p>
+                                    <a href="#" class="enroll-btn-white">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="justify-content-between d-flex">
+                                <span class="cat-tag">B.Sc</span>
+                                <span class="cat-tag">3 Years</span>
+
+                            </div>
+                            <h5 class="course-title">B.Sc In Mathematics...</h5>
+                            <!-- <p class="text-muted small">Siddarth University, Kapilvastu</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide  arts">
+                    <div class="course-card">
+                        <div class="img-box">
+                            <img src="https://i.pinimg.com/1200x/8c/74/0e/8c740ed73c14f1e981bac55e27c334fc.jpg" alt="">
+                            <div class="overlay-slide">
+                                <div class="overlay-content">
+                                    <p>Affilated with Siddarth University , Kapilvastu Siddharth Nagar</p>
+                                    <a href="#" class="enroll-btn-white">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="justify-content-between d-flex">
+                                <span class="cat-tag">B.Sc</span>
+                                <span class="cat-tag">4 Years</span>
+
+                            </div>
+                            <h5 class="course-title">B.Sc In Biology...</h5>
+                            <!-- <p class="text-muted small">Siddarth University, Kapilvastu</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide  commerce">
+                    <div class="course-card">
+                        <div class="img-box">
+                            <img src="https://i.pinimg.com/1200x/47/73/b9/4773b92dafb4982dccc2539ec9778539.jpg" alt="">
+                            <div class="overlay-slide">
+                                <div class="overlay-content">
+                                    <p>Affilated with Siddarth University , Kapilvastu Siddharth Nagar</p>
+                                    <a href="#" class="enroll-btn-white">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="justify-content-between d-flex">
+                                <span class="cat-tag">B.Com</span>
+                                <span class="cat-tag">3 Years</span>
+
+                            </div>
+                            <h5 class="course-title">B.Com (Bachelor of Commerce)...</h5>
+                            <!-- <p class="text-muted small">Siddarth University, Kapilvastu</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide education">
+                    <div class="course-card">
+                        <div class="img-box">
+                            <img src="https://i.pinimg.com/1200x/ff/25/4c/ff254cfe1758352087b3666e8fb7d1ae.jpg" alt="">
+                            <div class="overlay-slide">
+                                <div class="overlay-content">
+                                    <p>Affilated with Siddarth University , Kapilvastu Siddharth Nagar</p>
+                                    <a href="#" class="enroll-btn-white">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="justify-content-between d-flex">
+                                <span class="cat-tag">B.Ed</span>
+                                <span class="cat-tag">2 Years</span>
+
+                            </div>
+                            <h5 class="course-title">Bachelor of Education</h5>
+                            <!-- <p class="text-muted small">Siddarth University, Kapilvastu</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide education">
+                    <div class="course-card">
+                        <div class="img-box">
+                            <img src="https://i.pinimg.com/1200x/f6/98/00/f69800a5fa6011994f391f382866875a.jpg" alt="">
+                            <div class="overlay-slide">
+                                <div class="overlay-content">
+                                    <p>Affilated with Siddarth University , Kapilvastu Siddharth Nagar</p>
+                                    <a href="#" class="enroll-btn-white">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="justify-content-between d-flex">
+                                <span class="cat-tag">D.El.Ed (BTC)
+</span>
+                                <span class="cat-tag">4 Years</span>
+
+                            </div>
+                            <h5 class="course-title">D.El.Ed (BTC)</h5>
+                            <!-- <p class="text-muted small">Siddarth University, Kapilvastu</p> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bottom-controls">
+            <div class="custom-nav prev-btn"><i class="fa-solid fa-arrow-left-long"></i></div>
+            <div class="custom-nav next-btn"><i class="fa-solid fa-arrow-right-long"></i></div>
+        </div>
+    </div>
+    <!-- program section  -->
+    <!-- footer  -->
+    <footer class="maxwell-footer">
+        <div class="container">
+
             <div class="footer-top">
                 <div class="subscribe-pill">
                     <input type="email" placeholder="Enter your email">
@@ -169,26 +423,67 @@
                 </div>
             </div>
 
-         
+
 
         </div>
-           <div class="copyright text-center">
-                <p>Copyright © 2026 All rights reserved.</p>
-            </div>
+        <div class="copyright text-center">
+            <p>Copyright © 2026 All rights reserved.</p>
+        </div>
     </footer>
-<!-- footer end  -->
- <!-- about us section  -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            window.addEventListener('scroll', function () {
-                const wrapper = document.getElementById('headerWrapper');
-                if (window.scrollY > 50) {
-                    wrapper.classList.add('scrolled');
-                } else {
-                    wrapper.classList.remove('scrolled');
-                }
+    <!-- footer end  -->
+    <!-- about us section  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const wrapper = document.getElementById('headerWrapper');
+            if (window.scrollY > 50) {
+                wrapper.classList.add('scrolled');
+            } else {
+                wrapper.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <script>
+        const swiper = new Swiper(".courseSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 25,
+            loop: true,
+            autoplay: { delay: 4000, disableOnInteraction: false },
+            navigation: {
+                nextEl: ".next-btn",
+                prevEl: ".prev-btn",
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            }
+        });
+
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const originalSlides = Array.from(document.querySelectorAll('.swiper-slide'));
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+
+                swiper.removeAllSlides();
+
+                originalSlides.forEach(slide => {
+                    if (filter === '*' || slide.classList.contains(filter.replace('.', ''))) {
+                        swiper.appendSlide(slide);
+                    }
+                });
+
+                swiper.update();
+                swiper.slideToLoop(0);
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>
