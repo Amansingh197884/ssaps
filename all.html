@@ -3,196 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Offerings Section</title>
+    <title>Recruiters Section</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
-    
+        :root {
+            --primary-color: #2c3e50;
+            --text-muted: #6c757d;
+            --bg-light: #f8f9fa;
+        }
 
-        .academic-section {
+        .recruiter-section {
             padding: 80px 0;
-            overflow: hidden;
+            background-color: #fff;
         }
 
-       .academic-section .section-tag {
-            color: #d4a017;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.9rem;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-       .academic-section .section-title {
+        .section-title {
             font-weight: 700;
-            font-size: 2.5rem;
-            color: #1a237e;
-            margin-bottom: 20px;
-        }
-
-       .academic-section .section-description {
-            max-width: 700px;
-            margin: 0 auto 50px;
-            color: #666;
-            line-height: 1.8;
-        }
-
-        /* Card Styling */
-      .academic-section  .program-card {
-            border: none;
-            border-radius: 20px;
-            overflow: hidden;
-            background: #fff;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            height: 100%;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
             position: relative;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.8s ease forwards;
         }
 
-      .academic-section  .program-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(26, 35, 126, 0.15);
+        .section-subtitle {
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            color: var(--text-muted);
+            line-height: 1.6;
         }
 
-       .academic-section .image-container {
-            position: relative;
-            height: 240px;
-            overflow: hidden;
-        }
-
-       .academic-section .program-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s ease;
-        }
-
-       .academic-section .program-card:hover .program-image {
-            transform: scale(1.1);
-        }
-
-       .academic-section .badge-overlay {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background: rgba(212, 160, 23, 0.9);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            backdrop-filter: blur(5px);
-        }
-
-       .academic-section .card-body {
-            padding: 30px;
-        }
-
-       .academic-section .program-name {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: #1a237e;
-            margin-bottom: 10px;
-        }
-
-       .academic-section .duration-info {
+        /* Logo Grid Styling */
+        .logo-item {
             display: flex;
             align-items: center;
-            color: #777;
-            font-size: 0.95rem;
-            margin-bottom: 20px;
+            justify-content: center;
+            padding: 20px;
+            height: 120px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            filter: grayscale(100%); /* Optional: Modern grayscale look */
+            opacity: 0.7;
         }
 
-       .academic-section .btn-explore {
-            background: #1a237e;
-            color: white;
-            border-radius: 10px;
-            padding: 10px 25px;
-            font-weight: 500;
-            transition: 0.3s;
-            border: none;
-            width: 100%;
+        .logo-item:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transform: translateY(-5px);
+            border-color: #dee2e6;
         }
 
-       .academic-section .btn-explore:hover {
-            background: #d4a017;
-            color: white;
+        .logo-item img {
+            max-width: 100%;
+            max-height: 60px;
+            object-fit: contain;
         }
 
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-      .academic-section  .delay-1 { animation-delay: 0.2s; }
-       .academic-section .delay-2 { animation-delay: 0.4s; }
-
+        /* Responsive adjustments */
         @media (max-width: 768px) {
-          .academic-section  .section-title { font-size: 2rem; }
+            .recruiter-section {
+                padding: 50px 0;
+            }
+            .logo-item {
+                height: 100px;
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
 
-<section class="academic-section">
-    <div class="container">
-        <div class="text-center mb-5">
-            <span class="section-tag">Our Academics Offerings</span>
-            <h2 class="section-title">Explore Our Top Programs</h2>
-            <p class="section-description">
-                We offer a wide range of courses and programs, catering to various disciplines and interests. 
-                From undergraduate to postgraduate studies, we ensure that our curriculum is comprehensive 
-                and relevant to the current industry trends.
-            </p>
+<section class="recruiter-section">
+    <div class="container text-center">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title">Our Top Recruiters</h2>
+                <p class="section-subtitle">
+                    Our institute is trusted by top brands and reputed organizations across industries. 
+                    With strong academic support and skill-based learning, our students get opportunities 
+                    to work with leading recruiters and build successful careers.
+                </p>
+            </div>
         </div>
+
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-5 col-md-6">
-                <div class="program-card delay-1">
-                    <div class="image-container">
-                        <div class="badge-overlay">#Study Programs</div>
-                        <img src="https://i.pinimg.com/1200x/9c/ce/6a/9cce6af92fe641683c65697a6bd728b0.jpg" alt="BBA Class" class="program-image">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="program-name">BBA (Bachelor of Business Administration)</h3>
-                        <div class="duration-info">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock me-2" viewBox="0 0 16 16">
-                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-                            </svg>
-                            Duration: 3 Years
-                        </div>
-                        <button class="btn btn-explore">View Details</button>
-                    </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="images/bajaj-min.jpg" alt="Apollo Tyres">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="images/amul-min.jpg" alt="Asian Paints">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Bajaj_Auto_logo.svg/1200px-Bajaj_Auto_logo.svg.png" alt="Bajaj">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Berger_Paints_logo.svg" alt="Berger">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Blue_Dart_logo.svg" alt="Blue Dart">
                 </div>
             </div>
 
-            <div class="col-lg-5 col-md-6">
-                <div class="program-card delay-2">
-                    <div class="image-container">
-                        <div class="badge-overlay">#Study Programs</div>
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800" alt="BCA Class" class="program-image">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="program-name">BCA (Bachelor of Computer Application)</h3>
-                        <div class="duration-info">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock me-2" viewBox="0 0 16 16">
-                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-                            </svg>
-                            Duration: 3 Years
-                        </div>
-                        <button class="btn btn-explore">View Details</button>
-                    </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/SpiceJet_logo.svg/1200px-SpiceJet_logo.svg.png" alt="SpiceJet">
                 </div>
             </div>
-
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Titan_Company_logo.svg/1200px-Titan_Company_logo.svg.png" alt="Titan">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/RAK_Ceramics_logo.png" alt="RAK Ceramics">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/HDFC_Bank_Logo.svg" alt="HDFC">
+                </div>
+            </div>
         </div>
     </div>
 </section>
