@@ -343,17 +343,32 @@
                     url('/images/about-banner.jpg') center/cover;
                 text-align: center;
             }
+            .about img
+            {
+                margin-top: 50px;
+            }
 
             .location-box {
                 border-left: none;
                 padding-left: 0;
             }
-
+            .location-box h3{
+                text-align: start !important;
+            }
+             .location-box p{
+                text-align: start !important;
+            }
+            .lead{
+                text-align: start;
+            }
+    .hero-wrapper {
+        text-align: start;
+    }
             .main-heading {
                 font-size: 2.8rem;
                 text-align: start;
             }
-
+            
             .glass-tag {
                 align-items: start;
                 justify-content: start;
@@ -1308,4 +1323,17 @@
             .testimonial-wrapper .review-text {
                 font-size: 1.1rem;
             }
+        }
+        /* css  */
+        .mtitle{
+            line-height: 1.5;
+            font-weight: bolder;
+        }
+        .ctabtn-sm{
+            padding: 15px 50px;
+            border: none;
+            background-color: var(--maxwell-lime);
+            border-radius: 50px;
+           margin-right: 20px;
+           margin-top: 15px;
         }
