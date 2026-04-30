@@ -934,7 +934,7 @@
         }
 
        .academic-section .section-tag {
-            color: #d4a017;
+            color: var(--maxwell-lime);
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -946,7 +946,7 @@
        .academic-section .section-title {
             font-weight: 700;
             font-size: 2.5rem;
-            color: #1a237e;
+            color: #000;
             margin-bottom: 20px;
         }
 
@@ -1026,8 +1026,8 @@
         }
 
        .academic-section .btn-explore {
-            background: #1a237e;
-            color: white;
+            background: var(--maxwell-lime);
+            color: #000;
             border-radius: 10px;
             padding: 10px 25px;
             font-weight: 500;
@@ -1037,7 +1037,7 @@
         }
 
        .academic-section .btn-explore:hover {
-            background: #d4a017;
+            background: var(--secondary);
             color: white;
         }
 
