@@ -1054,3 +1054,13 @@
         @media (max-width: 768px) {
           .academic-section  .section-title { font-size: 2rem; }
         }
+.cafd{
+    font-size: 16px;
+    font-weight: bold;
+color: #000;    background-color: var(--maxwell-lime);
+padding: 10px 30px;
+border-radius: 50px;
+cursor: pointer;
+text-decoration: none;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
