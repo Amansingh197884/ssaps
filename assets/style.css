@@ -381,7 +381,7 @@ min-height: 90vh;
         }
 
         .maxwell-footer {
-            background-color: #ffffff;
+            background-color: var(--maxwell-lime);
             padding: 40px 0 0px;
             color: var(--dark-text);
             border-top: 1px solid #eee;
@@ -467,7 +467,7 @@ min-height: 90vh;
         }
 
         .footer-links a:hover {
-            color: var(--maxwell-lime);
+            color: #fff;
         }
 
         .social-links a {
@@ -488,7 +488,7 @@ min-height: 90vh;
             padding-top: 30px;
             padding-bottom: 2%;
             border-top: 1px solid #f3f4f6;
-            color: #9ca3af;
+            color: #000000;
             font-size: 0.85rem;
             background: var(--maxwell-lime);
         }
