@@ -336,7 +336,10 @@
                 opacity: 0;
             }
         }
-
+  @media (max-width: 771px) {
+            .hero-wrapper {
+min-height: 90vh;
+            }}
         @media (max-width: 991px) {
             .hero-wrapper {
                 background: linear-gradient(rgba(15, 16, 18, 0.85), rgba(15, 16, 18, 0.85)),
