@@ -1342,3 +1342,95 @@ min-height: 90vh;
            margin-right: 20px;
            margin-top: 15px;
         }
+
+        /* new css for hero others  */
+      
+
+        .hero-banner-about {
+            position: relative;
+            height: 80vh; 
+                background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            overflow: hidden;
+            background-repeat: no-repeat;
+        }
+
+      .hero-banner-about  .breadcrumb-text {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: block;
+            opacity: 0;
+            animation: slideInDown 0.8s forwards;
+        }
+       .hero-banner-about .breadcrumb-text span {
+            color: #8cc63f;
+            margin: 0 8px;
+        }
+
+      .hero-banner-about  .hero-title {
+            font-size: clamp(2.5rem, 8vw, 4.5rem); 
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            opacity: 0;
+            animation: slideInLeft 1s 0.2s forwards;
+        }
+
+      .hero-banner-about  .title-underline {
+            width: 80px;
+            height: 5px;
+            background-color: #8cc63f;
+            margin-bottom: 25px;
+            opacity: 0;
+            animation: expandLine 1s 0.5s forwards;
+        }
+
+       .hero-banner-about .hero-description {
+            font-size: 1.1rem;
+            max-width: 600px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            opacity: 0;
+            animation: fadeInUp 1s 0.8s forwards;
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes expandLine {
+            from { width: 0; opacity: 0; }
+            to { width: 80px; opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+           .hero-banner-about .hero-banner {
+                height: 50vh;
+                text-align: center;
+                justify-content: center;
+            }
+           .hero-banner-about .title-underline {
+                margin: 0 auto 25px auto;
+            }
+          .hero-banner-about  .hero-description {
+                margin: 0 auto;
+            }
+        }
+.mission{
+    background-image: url();
+}
